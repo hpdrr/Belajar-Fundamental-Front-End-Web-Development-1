@@ -3,9 +3,9 @@ class NoteForm extends HTMLElement {
     this.innerHTML = `
       <form id="note-form">
         <input type="text" id="note-title" placeholder="Title" required />
-        <small id=titleError>Title is required</small>
-        <textarea id="note-body" placeholder="Body" required></textarea>
-        <small id=bodyError>Body is required</small>
+        <small id="titleError" class="error" style="display: none;">*Title is required</small>
+        <textarea id="note-body" placeholder="Description" required></textarea>
+        <small id="bodyError" class="error" style="display: none;">*Description is required</small>
         <button type="submit">Add Note</button>
       </form>
     `;

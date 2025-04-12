@@ -4,7 +4,7 @@ const home = () => {
   const notesContainer = document.getElementById("notes-container");
   notesData.forEach((note) => {
     const noteItem = document.createElement("note-item");
-    noteItem.setAttribute("color", "#f0f8ff");
+    noteItem.setAttribute("color", "#0a192f");
     noteItem.note = note;
     notesContainer.appendChild(noteItem);
   });
@@ -27,10 +27,9 @@ const home = () => {
     };
 
     const noteItem = document.createElement("note-item");
-    noteItem.setAttribute("color", "#f0f8ff");
+    noteItem.setAttribute("color", "#0a192f");
     noteItem.note = note;
     notesContainer.appendChild(noteItem);
-    // noteForm.resetForm();
 
     document.getElementById("note-form").reset();
   });
